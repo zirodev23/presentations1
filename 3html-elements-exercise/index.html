@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="lv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML prezentācija ar uzdevumiem</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        padding: 20px;
+      }
+      .slide {
+        margin: 0 auto;
+        width: 50%;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      h1,
+      h2 {
+        color: #0056b3;
+      }
+      p {
+        font-size: 18px;
+      }
+      .example {
+        background-color: #e0e0e0;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+        font-family: "Courier New", Courier, monospace;
+      }
+      .buttons {
+        margin-top: 20px;
+      }
+      .buttons button {
+        background-color: #0056b3;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      ul {
+        text-align: left;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide" id="slide1">
+      <h1>Ievads HTML</h1>
+      <p>
+        HTML jeb Hiperteksta iezīmēšanas valoda ir tīmekļa vietņu pamats. Tas
+        nosaka tīmekļa lapas struktūru un saturu.
+      </p>
+      <div class="buttons">
+        <button onclick="nextSlide()">Nākamā</button>
+      </div>
+    </div>
+
+    <div class="slide" id="slide2" style="display: none">
+      <h2>Elementi un tagi</h2>
+      <p>HTML sastāv no tagiem. Populārākie tagi:</p>
+      <ul>
+        <li><strong>&lt;h1&gt;-&lt;h6&gt;</strong>: virsraksti</li>
+        <li><strong>&lt;p&gt;</strong>: paragrāfs</li>
+        <li><strong>&lt;a&gt;</strong>: hipersaite</li>
+        <li><strong>&lt;img&gt;</strong>: attēls</li>
+      </ul>
+      <div class="buttons">
+        <button onclick="prevSlide()">Atpakaļ</button>
+        <button onclick="nextSlide()">Nākamā</button>
+      </div>
+    </div>
+
+    <div class="slide" id="slide3" style="display: none">
+      <h2>HTML piemērs</h2>
+      <p>Vienkāršs HTML kods:</p>
+      <div class="example">
+        &lt;h1&gt;Sveiki, pasaule!&lt;/h1&gt;<br />
+        &lt;p&gt;Šis ir vienkāršs paragrāfs.&lt;/p&gt;<br />
+        &lt;a href="https://example.com"&gt;Apmeklē mūsu lapu&lt;/a&gt;
+      </div>
+      <div class="buttons">
+        <button onclick="prevSlide()">Atpakaļ</button>
+        <button onclick="nextSlide()">Nākamā</button>
+      </div>
+    </div>
+
+    <div class="slide" id="slide4" style="display: none">
+      <h2>Uzdevums: Iepirkumu saraksts un preču apraksti</h2>
+      <p>
+        Mērķis: izveidot HTML dokumentu, kas parāda izpratni par numurētiem
+        (ordered), nenumurētiem (unordered) un apraksta sarakstiem (description
+        list).
+      </p>
+
+      <h2>Norādījumi</h2>
+      <ul>
+        <li>
+          Izveido pamata HTML lapas struktūru ar &lt;title&gt; "Mans iepirkumu
+          saraksts."
+        </li>
+        <li>
+          HTML dokumenta &lt;body&gt; daļā izveido virsrakstu &lt;h1&gt; ar
+          nosaukumu "Iepirkumu saraksts."
+        </li>
+        <li>
+          Zem virsraksta izveido nenumurētu sarakstu (unordered list) ar vismaz
+          5 lietām, ko nepieciešams iegādāties veikalā.
+        </li>
+        <li>
+          Vienam no saraksta elementiem pievieno ligzdotu (nested) sarakstu –
+          numurētu sarakstu (ordered list), kas norāda darbības, kā izmantot vai
+          sagatavot konkrēto preci.
+        </li>
+        <li>
+          Pievieno vēl vienu virsrakstu &lt;h2&gt; ar nosaukumu "Prioritātes."
+        </li>
+        <li>
+          Zem tā izveido numurētu sarakstu (ordered list), kurā uzskaitītas
+          tavas 3 vissvarīgākās iepirkumu lietas.
+        </li>
+        <li>
+          Zem prioritātēm pievieno apraksta sarakstu (description list) ar
+          virsrakstu &lt;h3&gt;, kurā iekļauti vismaz 3 pirkumu apraksti.
+        </li>
+        <li>
+          Izmanto &lt;dt&gt; aprakstāmā priekšmeta nosaukumam un &lt;dd&gt; tā
+          aprakstam.
+        </li>
+        <li>
+          Izmanto papildus &lt;p&gt; tagu zem sarakstiem, lai paskaidrotu, kāpēc
+          pirmais saraksta elements ir vissvarīgākais.
+        </li>
+      </ul>
+
+      <div class="buttons">
+        <button onclick="prevSlide()">Atpakaļ</button>
+        <button onclick="nextSlide()">Nākamā</button>
+      </div>
+    </div>
+
+    <div class="slide" id="slide5" style="display: none">
+      <h2>Uzdevums: Kontaktformas izveide</h2>
+      <p>
+        Mērķis: izveidot HTML lapu ar kontaktformu, kurā tiek izmantoti dažādi
+        formas elementi, piemēram, teksta ievades lauki, izvēles rūtiņas, radio
+        pogas un teksta apgabals. Studenti arī apgūs formas piekļuvi un ievades
+        datu organizēšanu.
+      </p>
+
+      <h2>Norādījumi</h2>
+      <ul>
+        <li>
+          Izveido pamata HTML lapas struktūru ar &lt;title&gt; "Kontakta forma."
+        </li>
+        <li>Izveido virsrakstu &lt;h1&gt; ar nosaukumu "Sazinies ar mums."</li>
+        <li>
+          Zem virsraksta izveido HTML formu (&lt;form&gt;), kas satur šādus
+          elementus: Teksta lauks vārda ievadīšanai.
+        </li>
+        <li>Teksta lauks e-pasta adreses ievadīšanai.</li>
+        <li>
+          Radio pogas, lai izvēlētos tēmu, piemēram, "Tehniskais atbalsts,"
+          "Piedāvājumi" un "Vispārīgi jautājumi."
+        </li>
+        <li>Izvēles rūtiņa, lai piekristu saņemt jaunumus.</li>
+        <li>Teksta apgabals (&lt;textarea&gt;) ziņojuma ievadīšanai.</li>
+        <li>Pievieno pogu "Iesniegt" (&lt;button type="submit"&gt;).</li>
+        <li>
+          Pievieno obligāto ievades norādes ar zvaigznīti (*) blakus laukiem,
+          kuriem jābūt obligātiem.
+        </li>
+      </ul>
+
+      <div class="buttons">
+        <button onclick="prevSlide()">Atpakaļ</button>
+      </div>
+    </div>
+
+    <script>
+      let currentSlide = 1;
+
+      function nextSlide() {
+        document.getElementById("slide" + currentSlide).style.display = "none";
+        currentSlide++;
+        document.getElementById("slide" + currentSlide).style.display = "block";
+      }
+
+      function prevSlide() {
+        document.getElementById("slide" + currentSlide).style.display = "none";
+        currentSlide--;
+        document.getElementById("slide" + currentSlide).style.display = "block";
+      }
+    </script>
+  </body>
+</html>
